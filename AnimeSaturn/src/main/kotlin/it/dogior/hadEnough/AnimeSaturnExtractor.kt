@@ -8,7 +8,7 @@ import com.lagradost.cloudstream3.SubtitleFile
 
 class AnimeSaturnExtractor : ExtractorApi() {
     override val name = "AnimeSaturn"
-    override val mainUrl = "https://www.animesaturn.cx"
+    override val mainUrl = "https://www.animesaturn.net"
     override val requiresReferer = true
 
     override suspend fun getUrl(

@@ -12,7 +12,7 @@ import java.util.Locale
 const val TAG = "AnimeSaturn"
 
 class AnimeSaturn : MainAPI() {
-    override var mainUrl = "https://www.animesaturn.cx"
+    override var mainUrl = "https://www.animesaturn.net"
     override var name = "AnimeSaturn"
     override val supportedTypes = setOf(TvType.Anime, TvType.AnimeMovie, TvType.OVA)
     override var lang = "it"
