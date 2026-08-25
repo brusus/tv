@@ -200,7 +200,7 @@ class Torrentio(private val sharedPref: SharedPreferences? = null) : TmdbProvide
     private suspend fun getEpisodes(showData: MediaDetail, id: Int?): List<Episode> {
         val episodes = showData.seasons?.mapNotNull { season ->
             app.get(
-                "$tmdbAPI/tv/${showData.id}/season/${season.seasonNumber}",
+                "$tmdbAPI/tv/${showData.id}/season/${season.seasonNumber}?language=it-IT",
                 headers = authHeaders
             ).parsedSafe<MediaDetailEpisodes>()?.episodes?.map { ep ->
                 newEpisode(
