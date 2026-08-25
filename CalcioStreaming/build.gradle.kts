@@ -21,5 +21,5 @@ cloudstream {
         "Live",
     )
 
-    iconUrl = "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/master/CalcioStreaming/calcio_icon.png"
+    iconUrl = "https://raw.githubusercontent.com/brusus/tv/main/CalcioStreaming/calcio_icon.png"
 }

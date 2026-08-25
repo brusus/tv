@@ -28,7 +28,7 @@ cloudstream {
     requiresResources = true
     language = "it"
 
-    iconUrl = "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/master/StreamingCommunity/streamingunity_icon.png"
+    iconUrl = "https://raw.githubusercontent.com/brusus/tv/main/StreamingCommunity/streamingunity_icon.png"
 }
 
 android {

@@ -25,5 +25,5 @@ cloudstream {
     language = "it"
     requiresResources = false
 
-    iconUrl = "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/master/AnimeUnity/animeunity_icon.png"
+    iconUrl = "https://raw.githubusercontent.com/brusus/tv/main/AnimeUnity/animeunity_icon.png"
 }

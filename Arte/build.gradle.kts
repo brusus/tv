@@ -22,7 +22,7 @@ cloudstream {
     requiresResources = true
     language = "en"
 
-    iconUrl = "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/master/Arte/arte_icon.png"
+    iconUrl = "https://raw.githubusercontent.com/brusus/tv/main/Arte/arte_icon.png"
 }
 
 android {

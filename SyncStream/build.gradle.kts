@@ -35,7 +35,7 @@ cloudstream {
         "Others",
     )
 
-    iconUrl = "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/master/SyncStream/SyncStream_icon.png"
+    iconUrl = "https://raw.githubusercontent.com/brusus/tv/main/SyncStream/SyncStream_icon.png"
     description = "Sincronizza Cloudstream tra dispositivi"
     requiresResources = true
 }

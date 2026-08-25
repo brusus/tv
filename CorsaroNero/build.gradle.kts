@@ -24,7 +24,7 @@ cloudstream {
     requiresResources = false
     language = "it"
 
-    iconUrl = "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/master/CorsaroNero/corsaronero_icon.png"
+    iconUrl = "https://raw.githubusercontent.com/brusus/tv/main/CorsaroNero/corsaronero_icon.png"
 }
 
 android {

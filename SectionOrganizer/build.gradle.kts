@@ -10,5 +10,5 @@ cloudstream {
     status = 3
     tvTypes = listOf("All")
     requiresResources = true
-    iconUrl = "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/master/SectionOrganizer/SectionOrganizer_icon.png"
+    iconUrl = "https://raw.githubusercontent.com/brusus/tv/main/SectionOrganizer/SectionOrganizer_icon.png"
 }

@@ -22,7 +22,7 @@ cloudstream {
     requiresResources = true
     language = "it"
 
-    iconUrl = "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/master/AltaDefinizione/altadefinizione_icon.png"
+    iconUrl = "https://raw.githubusercontent.com/brusus/tv/main/AltaDefinizione/altadefinizione_icon.png"
 }
 
 android {

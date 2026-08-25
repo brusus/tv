@@ -22,7 +22,7 @@ cloudstream {
     requiresResources = false
     language = "it"
 
-    iconUrl = "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/master/CB01/cb01_icon.png"
+    iconUrl = "https://raw.githubusercontent.com/brusus/tv/main/CB01/cb01_icon.png"
 }
 dependencies{
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.1")

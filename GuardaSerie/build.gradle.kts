@@ -20,5 +20,5 @@ cloudstream {
 
     language = "it"
 
-    iconUrl = "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/master/GuardaSerie/GuardaSerie_icon.png"
+    iconUrl = "https://raw.githubusercontent.com/brusus/tv/main/GuardaSerie/GuardaSerie_icon.png"
 }

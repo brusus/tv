@@ -46,7 +46,7 @@ cloudstream {
         "Others",
     )
 
-    iconUrl = "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/master/WatchParty/WatchParty_icon.png"
+    iconUrl = "https://raw.githubusercontent.com/brusus/tv/main/WatchParty/WatchParty_icon.png"
     description = "⚠️ BETA ⚠️ Watch movies and TV series together in real-time with live chat (Up to 5 users)."
     requiresResources = true
 }

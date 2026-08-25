@@ -23,5 +23,5 @@ cloudstream {
     requiresResources = false
     language = "it"
 
-    iconUrl = "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/master/IlGenioDelloStreaming/IlGenioDelloStreaming_icon.png"
+    iconUrl = "https://raw.githubusercontent.com/brusus/tv/main/IlGenioDelloStreaming/IlGenioDelloStreaming_icon.png"
 }

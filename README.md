@@ -1,16 +1,16 @@
-# ItaliaInStreaming
+# tv
 🇮🇹Repository italiana con plugin per CloudStream!
 
 ---
 
 ## 📥 Installazione
 
-Clicca sull'immagine per installare la repo oppure vai in *Impostazioni* -> *Estensioni* -> *Aggiungi repository* e nel campo URL scrivi: `diegon7`
+Vai in *Impostazioni* -> *Estensioni* -> *Aggiungi repository* e nel campo URL incolla: `https://raw.githubusercontent.com/brusus/tv/builds/plugins.json`
 
 
 <p align="center">
-  <a href="https://diegon7771.github.io/Cs-site?r=cloudstreamrepo://pastebin.com/raw/qndZtL6D" target="_blank">
-    <img src="https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/master/install.png" alt="Install" width="170px"/>
+  <a href="https://raw.githubusercontent.com/brusus/tv/builds/plugins.json" target="_blank">
+    <img src="https://raw.githubusercontent.com/brusus/tv/main/install.png" alt="Install" width="170px"/>
   </a>
 </p>
 
@@ -31,22 +31,22 @@ Clicca sull'immagine per installare la repo oppure vai in *Impostazioni* -> *Est
 **Stremio – Guida**
 Spiegazione dettagliata di Stremio (configurazione addons).
 
-[Apri Guida →](https://github.com/DieGon7771/ItaliaInStreaming/blob/master/guide/README_Stremio.md)
+[Apri Guida →](https://github.com/brusus/tv/blob/main/guide/README_Stremio.md)
 
 **SyncStream – Guida** 
 Spiegazione dettagliata di Cross Device Sync (sincronizzazione dispositivi).
 
-[Apri Guida →](https://github.com/DieGon7771/ItaliaInStreaming/blob/master/guide/README_SyncStream.md)
+[Apri Guida →](https://github.com/brusus/tv/blob/main/guide/README_SyncStream.md)
 
 **SectionOrganizer – Guida** 
 Spiegazione dettagliata della homepage personalizzata (configurazione home).
 
-[Apri Guida →](https://github.com/DieGon7771/ItaliaInStreaming/blob/master/guide/README_SectionOrganizer.md)
+[Apri Guida →](https://github.com/brusus/tv/blob/main/guide/README_SectionOrganizer.md)
 
 **StreamITA – Guida** 
 Spiegazione dettagliata ......
 
-[Apri Guida →](https://github.com/DieGon7771/ItaliaInStreaming/blob/master/guide/README_StreamITA.md)
+[Apri Guida →](https://github.com/brusus/tv/blob/main/guide/README_StreamITA.md)
 
 ## 🔀 Crediti
 • **La maggior parte dei plugin** sono stati forkati da: [doGiorsHadEnough](https://github.com/doGior/doGiorsHadEnough) 
@@ -84,4 +84,4 @@ Le estensioni qui presenti funzionano in maniera analoga a un normale browser we
 
 ---
 
-**Grazie per aver scelto ItaliaInStreaming!**
+**Grazie per aver scelto questa repo!**

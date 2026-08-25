@@ -25,5 +25,5 @@ cloudstream {
     language = "it"
     requiresResources = false
 
-    iconUrl = "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/master/AnimeSaturn/animesaturn_icon.png"
+    iconUrl = "https://raw.githubusercontent.com/brusus/tv/main/AnimeSaturn/animesaturn_icon.png"
 }

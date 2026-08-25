@@ -25,7 +25,7 @@ cloudstream {
         "OVA",
     )
 
-    iconUrl = "https://raw.githubusercontent.com/DieGon7771/ItaliaInStreaming/master/AnimeWorld/animeworld_icon.png"
+    iconUrl = "https://raw.githubusercontent.com/brusus/tv/main/AnimeWorld/animeworld_icon.png"
 }
 
 android {
