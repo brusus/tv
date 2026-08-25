@@ -19,9 +19,18 @@ version = 3
 
 android {
     defaultConfig {
+        // Legge secrets.properties se presente; in mancanza si ricade
+        // sulle variabili d'ambiente e infine su stringa vuota, cosi'
+        // che la build funzioni anche senza il file.
         val properties = Properties()
-        properties.load(project.rootProject.file("secrets.properties").inputStream())
-        buildConfigField("String", "WATCHPARTY_RELAY", "\"${properties.getProperty("WATCHPARTY_RELAY").orEmpty()}\"")
+        val secretsFile = project.rootProject.file("secrets.properties")
+        if (secretsFile.exists()) {
+            secretsFile.inputStream().use { properties.load(it) }
+        }
+        val watchPartyRelay = properties.getProperty("WATCHPARTY_RELAY")
+            ?: System.getenv("WATCHPARTY_RELAY")
+            ?: ""
+        buildConfigField("String", "WATCHPARTY_RELAY", "\"$watchPartyRelay\"")
     }
 
     buildFeatures {

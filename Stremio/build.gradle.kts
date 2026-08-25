@@ -8,10 +8,19 @@ android {
         viewBinding = true
     }
     defaultConfig {
+        // Legge secrets.properties se presente; in mancanza si ricade
+        // sulle variabili d'ambiente e infine su stringa vuota, cosi'
+        // che la build funzioni anche senza il file.
         val properties = Properties()
-        properties.load(project.rootProject.file("secrets.properties").inputStream())
+        val secretsFile = project.rootProject.file("secrets.properties")
+        if (secretsFile.exists()) {
+            secretsFile.inputStream().use { properties.load(it) }
+        }
         android.buildFeatures.buildConfig = true
-        buildConfigField("String", "TMDB_API3", "\"${properties.getProperty("TMDB_API3")}\"")
+        val tmdbApi3 = properties.getProperty("TMDB_API3")
+            ?: System.getenv("TMDB_API3")
+            ?: ""
+        buildConfigField("String", "TMDB_API3", "\"$tmdbApi3\"")
     }
 }
 
