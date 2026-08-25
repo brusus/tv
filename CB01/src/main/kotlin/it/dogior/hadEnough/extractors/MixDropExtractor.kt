@@ -23,7 +23,7 @@ import kotlin.coroutines.resume
 
 class MixDropExtractor : ExtractorApi() {
     override val name = "MixDrop"
-    override val mainUrl = "mixdrop.top"
+    override val mainUrl = "mixdrop.ag"
     override val requiresReferer = false
 
     companion object {
@@ -77,7 +77,7 @@ class MixDropExtractor : ExtractorApi() {
                     this.headers = mapOf(
                         "User-Agent" to "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36"
                     )
-                    this.referer = "https://mixdrop.top/"
+                    this.referer = "https://mixdrop.ag/"
                 }
             )
         }

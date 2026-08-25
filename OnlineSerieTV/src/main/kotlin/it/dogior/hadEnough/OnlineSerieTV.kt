@@ -39,7 +39,7 @@ import java.net.SocketTimeoutException
 import kotlin.coroutines.resume
 
 class OnlineSerieTV : MainAPI() {
-    override var mainUrl = "https://onlineserietv.lol"
+    override var mainUrl = "https://onlineserietv.mom"
     override var name = "OnlineSerieTV"
     override val supportedTypes = setOf(
         TvType.Movie, TvType.TvSeries,

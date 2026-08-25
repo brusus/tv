@@ -42,7 +42,7 @@ import org.jsoup.Jsoup
 import org.jsoup.nodes.Document
 
 class CB01 : MainAPI() {
-    override var mainUrl = "https://cb01uno.today"
+    override var mainUrl = "https://cb01uno.monster"
     override var name = "CB01"
     override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries, TvType.Cartoon)
     override var lang = "it"
@@ -365,10 +365,10 @@ class CB01 : MainAPI() {
                 var realUrl = json.getJSONObject("data").getString("value")
                 Log.d("CB01:StayOnline", "Real URL: $realUrl")
                 
-                // Converti m1xdrop.net/f/xxx → mixdrop.top/e/xxx
+                // Converti m1xdrop.net/f/xxx → mixdrop.ag/e/xxx
                 if (realUrl.contains("m1xdrop.net/f/")) {
                     val videoId = realUrl.substringAfterLast("/")
-                    realUrl = "https://mixdrop.top/e/$videoId"
+                    realUrl = "https://mixdrop.ag/e/$videoId"
                     Log.d("CB01:StayOnline", "Converted to: $realUrl")
                 }
                 realUrl
