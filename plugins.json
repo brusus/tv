@@ -1,0 +1,389 @@
+[
+    {
+        "url": "https://raw.githubusercontent.com/brusus/tv/builds/AltaDefinizione.cs3",
+        "status": 0,
+        "version": 28,
+        "name": "AltaDefinizione",
+        "internalName": "AltaDefinizione",
+        "authors": [
+            "doGior",
+            "DieGon"
+        ],
+        "description": "Film e SerieTV da Altadefinizione",
+        "fileSize": 39116,
+        "repositoryUrl": "https://github.com/brusus/tv",
+        "language": "it",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Documentary"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/brusus/tv/main/AltaDefinizione/altadefinizione_icon.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-7fcf1908172624b915eee71c70f849661e19217abab5d6c09b278d1de8441f81"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/brusus/tv/builds/AnimeSaturn.cs3",
+        "status": 0,
+        "version": 5,
+        "name": "AnimeSaturn",
+        "internalName": "AnimeSaturn",
+        "authors": [
+            "DieGon"
+        ],
+        "description": "Anime da AnimeSaturn",
+        "fileSize": 27495,
+        "repositoryUrl": "https://github.com/brusus/tv",
+        "language": "it",
+        "tvTypes": [
+            "AnimeMovie",
+            "Anime",
+            "OVA"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/brusus/tv/main/AnimeSaturn/animesaturn_icon.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-de7ab96180086256712e2148dff0c7c35d41296bf8925ad09680beecb6a09578"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/brusus/tv/builds/AnimeUnity.cs3",
+        "status": 1,
+        "version": 17,
+        "name": "AnimeUnity",
+        "internalName": "AnimeUnity",
+        "authors": [
+            "doGior",
+            "DieGon"
+        ],
+        "description": "Anime da AnimeUnity",
+        "fileSize": 40291,
+        "repositoryUrl": "https://github.com/brusus/tv",
+        "language": "it",
+        "tvTypes": [
+            "AnimeMovie",
+            "Anime",
+            "OVA"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/brusus/tv/main/AnimeUnity/animeunity_icon.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-e46e0dc3e3990a78a62bb2a74208864e699096ce845ec48a1c6feeb2989e7be6"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/brusus/tv/builds/AnimeWorld.cs3",
+        "status": 1,
+        "version": 20,
+        "name": "AnimeWorld",
+        "internalName": "AnimeWorld",
+        "authors": [
+            "doGior",
+            "DieGon"
+        ],
+        "description": "Anime da AnimeWorld",
+        "fileSize": 42240,
+        "repositoryUrl": "https://github.com/brusus/tv",
+        "language": "it",
+        "tvTypes": [
+            "AnimeMovie",
+            "Anime",
+            "OVA"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/brusus/tv/main/AnimeWorld/animeworld_icon.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-7bbe26af2a1727efd52fb773532ee48102190f16ee7020c3671cd31afbb1c85d"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/brusus/tv/builds/Arte.cs3",
+        "status": 1,
+        "version": 5,
+        "name": "Arte",
+        "internalName": "Arte",
+        "authors": [
+            "doGior, DieGon"
+        ],
+        "description": "Concerti, documentari, ecc.. in arte.tv",
+        "fileSize": 35257,
+        "repositoryUrl": "https://github.com/brusus/tv",
+        "language": "en",
+        "tvTypes": [
+            "Documentary"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/brusus/tv/main/Arte/arte_icon.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-b3dbad219dd2eb464cca2fb61565f4297de73940000b61b00f5239922fa36211"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/brusus/tv/builds/CalcioStreaming.cs3",
+        "status": 1,
+        "version": 21,
+        "name": "CalcioStreaming",
+        "internalName": "CalcioStreaming",
+        "authors": [
+            "doGior",
+            "DieGon"
+        ],
+        "description": "Live streams da CalcioStreaming",
+        "fileSize": 16753,
+        "repositoryUrl": "https://github.com/brusus/tv",
+        "language": "it",
+        "tvTypes": [
+            "Live"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/brusus/tv/main/CalcioStreaming/calcio_icon.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-18e42eea5b6de51291ff5e381e052affe69f42c629acd5c3439ee1d26a333c7c"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/brusus/tv/builds/CB01.cs3",
+        "status": 0,
+        "version": 31,
+        "name": "CB01",
+        "internalName": "CB01",
+        "authors": [
+            "doGior",
+            "Bbshak",
+            "DieGon"
+        ],
+        "description": "Film e SerieTV da CB01",
+        "fileSize": 41011,
+        "repositoryUrl": "https://github.com/brusus/tv",
+        "language": "it",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Cartoon"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/brusus/tv/main/CB01/cb01_icon.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-e04ae53965f15eba9c8b9b6150a5263699e8e1fdbb3d5fd66df723f1e9219241"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/brusus/tv/builds/GuardaPlay.cs3",
+        "status": 3,
+        "version": 1,
+        "name": "GuardaPlay",
+        "internalName": "GuardaPlay",
+        "authors": [
+            "DieGon"
+        ],
+        "description": "Film in Streaming da GuardaPlay !BETA!",
+        "fileSize": 22538,
+        "repositoryUrl": "https://github.com/brusus/tv",
+        "language": "it",
+        "tvTypes": [
+            "Movie",
+            "Cartoon",
+            "Documentary"
+        ],
+        "iconUrl": "https://guardaplay.store/wp-content/uploads/2021/05/cropped-Guarda-Flix-192x192.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-15f46155b79ab8423d14262a3ddc31ee7c64e3fd4f881e495e22a8f5b03a7845"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/brusus/tv/builds/GuardaSerie.cs3",
+        "status": 1,
+        "version": 7,
+        "name": "GuardaSerie",
+        "internalName": "GuardaSerie",
+        "authors": [
+            "DieGon"
+        ],
+        "description": "SerieTV da GuardaSerie",
+        "fileSize": 21415,
+        "repositoryUrl": "https://github.com/brusus/tv",
+        "language": "it",
+        "tvTypes": [
+            "TvSeries",
+            "Cartoon"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/brusus/tv/main/GuardaSerie/GuardaSerie_icon.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-f826d46e4c44d5ad60fbdf31ae061eab3ac58639de3d78c3af086f456444b84a"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/brusus/tv/builds/Huhu.cs3",
+        "status": 1,
+        "version": 7,
+        "name": "Huhu",
+        "internalName": "Huhu",
+        "authors": [
+            "DieGon"
+        ],
+        "description": "Canali TV da Huhu",
+        "fileSize": 31835,
+        "repositoryUrl": "https://github.com/brusus/tv",
+        "tvTypes": [
+            "Live"
+        ],
+        "iconUrl": "https://huhu.to/favicon.ico",
+        "apiVersion": 1,
+        "fileHash": "sha256-0421b344eb277e392fd3c7746091f211b87f7ace34abb146532368e7e8ddf32e"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/brusus/tv/builds/OnlineSerieTV.cs3",
+        "status": 0,
+        "version": 5,
+        "name": "OnlineSerieTV",
+        "internalName": "OnlineSerieTV",
+        "authors": [
+            "DieGon"
+        ],
+        "description": "Film e SerieTV da OnlineSerieTV",
+        "fileSize": 35991,
+        "repositoryUrl": "https://github.com/brusus/tv",
+        "language": "it",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Cartoon",
+            "Anime",
+            "Documentary"
+        ],
+        "iconUrl": "https://lingering-truth-455c.diegon7771.workers.dev/wp-content/uploads/2023/01/cropped-tv-1.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-58656cb44917deccb44c9c902cc5666c64286a53d3769766a384e0c0863e516a"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/brusus/tv/builds/SectionOrganizer.cs3",
+        "status": 3,
+        "version": 4,
+        "name": "SectionOrganizer",
+        "internalName": "SectionOrganizer",
+        "authors": [
+            "RowdyRushya, Phisher98, DieGon"
+        ],
+        "description": "Organizza homepage tra vari plugin",
+        "fileSize": 54245,
+        "repositoryUrl": "https://github.com/brusus/tv",
+        "tvTypes": [
+            "All"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/brusus/tv/main/SectionOrganizer/SectionOrganizer_icon.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-3c06e24c98bc8aa368dc8f4a29bd3763c5d2b2078671c9ac5fb634686fad4fa0"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/brusus/tv/builds/StreamingCommunity.cs3",
+        "status": 1,
+        "version": 57,
+        "name": "StreamingCommunity",
+        "internalName": "StreamingCommunity",
+        "authors": [
+            "Nanduuu03",
+            "DieGon"
+        ],
+        "description": "Film e SerieTV da StreamingCommunity",
+        "fileSize": 65697,
+        "repositoryUrl": "https://github.com/brusus/tv",
+        "language": "it",
+        "tvTypes": [
+            "TvSeries",
+            "Movie",
+            "Documentary",
+            "Cartoon"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/brusus/tv/main/StreamingCommunity/streamingunity_icon.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-d8bda7434b965e485c07dd01ceb9d6f70ff6b8437df6597ce7f373137c72084f"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/brusus/tv/builds/Stremio.cs3",
+        "status": 3,
+        "version": 14,
+        "name": "Stremio",
+        "internalName": "Stremio",
+        "authors": [
+            "Hexated, phisher98, DieGon"
+        ],
+        "description": "Addon di Stremio su Cloudstream",
+        "fileSize": 105376,
+        "repositoryUrl": "https://github.com/brusus/tv",
+        "language": "it",
+        "tvTypes": [
+            "TvSeries",
+            "Movie"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/brusus/tv/main/Stremio/stremio_icon.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-069e1f6a59321d6673e5c4215503a6dc3257ea697e0c471bb0c1e40fbf56b99a"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/brusus/tv/builds/SyncStream.cs3",
+        "status": 3,
+        "version": 11,
+        "name": "SyncStream",
+        "internalName": "SyncStream",
+        "authors": [
+            "DieGon"
+        ],
+        "description": "Sincronizza Cloudstream tra dispositivi",
+        "fileSize": 79251,
+        "repositoryUrl": "https://github.com/brusus/tv",
+        "tvTypes": [
+            "Others"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/brusus/tv/main/SyncStream/SyncStream_icon.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-5d8c1ebc0965ee437f009fa89d0f5145c94ec3b37bd2acc12c19d115bc84b0a1"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/brusus/tv/builds/Torrentio.cs3",
+        "status": 1,
+        "version": 10,
+        "name": "Torrentio",
+        "internalName": "Torrentio",
+        "authors": [
+            "doGior",
+            "DieGon"
+        ],
+        "description": "Torrent da Torrentio",
+        "fileSize": 59974,
+        "repositoryUrl": "https://github.com/brusus/tv",
+        "language": "it",
+        "tvTypes": [
+            "Movie",
+            "TvSeries",
+            "Torrent",
+            "Documentary"
+        ],
+        "iconUrl": "https://torrentio.strem.fun/images/logo_v1.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-d273026d464e0d10ed29559166cb67fd26c8774bd2b9c29942ede927649fce58"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/brusus/tv/builds/TV.cs3",
+        "status": 1,
+        "version": 5,
+        "name": "TV",
+        "internalName": "TV",
+        "authors": [
+            "DieGon"
+        ],
+        "description": "TV live da TV github repository",
+        "fileSize": 29023,
+        "repositoryUrl": "https://github.com/brusus/tv",
+        "tvTypes": [
+            "Live"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/doGior/doGiorsHadEnough/refs/heads/master/TV/television.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-33056ebe983a4d4875e7dba95f95e75c881caad29f8e89c0aa74ac674c4fbd95"
+    },
+    {
+        "url": "https://raw.githubusercontent.com/brusus/tv/builds/WatchParty.cs3",
+        "status": 3,
+        "version": 3,
+        "name": "WatchParty",
+        "internalName": "WatchParty",
+        "authors": [
+            "DieGon"
+        ],
+        "description": "\u26a0\ufe0f BETA \u26a0\ufe0f Watch movies and TV series together in real-time with live chat (Up to 5 users).",
+        "fileSize": 98766,
+        "repositoryUrl": "https://github.com/brusus/tv",
+        "tvTypes": [
+            "Others"
+        ],
+        "iconUrl": "https://raw.githubusercontent.com/brusus/tv/main/WatchParty/WatchParty_icon.png",
+        "apiVersion": 1,
+        "fileHash": "sha256-97243e8b7caacdc4e5617273d80059b0700bcb652465fe5cf137fbb444e07206"
+    }
+]
