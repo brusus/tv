@@ -1,0 +1,75 @@
+name: Build
+
+concurrency:
+  group: "build"
+  cancel-in-progress: true
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+      packages: read
+      
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          path: "src"
+
+      - name: Checkout builds
+        uses: actions/checkout@v4
+        with:
+          ref: "builds"
+          path: "builds"
+      
+      - name: Clean old builds
+        run: rm $GITHUB_WORKSPACE/builds/*.cs3 || true
+
+      - name: Setup Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: adopt
+          java-version: 17
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3.2.2
+
+      - name: Access Secrets
+        env:
+          TMDB_API: ${{ secrets.TMDB_API }}
+          TMDB_API3: ${{ secrets.TMDB_API3 }}
+          WATCHPARTY_RELAY: ${{ secrets.WATCHPARTY_RELAY }}
+        run: |
+          cd $GITHUB_WORKSPACE/src
+          echo TMDB_API=$TMDB_API >> secrets.properties
+          echo TMDB_API3=$TMDB_API3 >> secrets.properties
+          echo WATCHPARTY_RELAY=$WATCHPARTY_RELAY >> secrets.properties
+
+      - name: Build Plugins
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_ACTOR: ${{ github.actor }}
+        run: |
+          cd $GITHUB_WORKSPACE/src
+          chmod +x gradlew
+          
+          ./gradlew make makePluginsJson \
+            -Pgpr.user="$GITHUB_ACTOR" \
+            -Pgpr.key="$GITHUB_TOKEN"
+            
+          cp **/build/*.cs3 $GITHUB_WORKSPACE/builds
+          cp build/plugins.json $GITHUB_WORKSPACE/builds
+
+      - name: Push builds
+        run: |
+          cd $GITHUB_WORKSPACE/builds
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add .
+          git commit --amend -m "Build $GITHUB_SHA" || exit 0
+          git push --force
