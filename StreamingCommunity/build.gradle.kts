@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.konan.properties.Properties
 // use an integer for version numbers
 
-version = 54
+version = 55
 
 
 cloudstream {
@@ -50,6 +50,23 @@ android {
             ?: System.getenv("TMDB_API")
             ?: ""
         buildConfigField("String", "TMDB_API", "\"$tmdbApi\"")
+
+        // Credenziali del piano premium, iniettate dai secret di GitHub Actions.
+        // Assenti in locale: il provider resta anonimo e la build non fallisce.
+        // I valori vengono sfuggiti perche' finiscono in un letterale Java: una
+        // password con virgolette o backslash romperebbe la compilazione.
+        fun escapeForJava(value: String) = value
+            .replace("\\", "\\\\")
+            .replace("\"", "\\\"")
+
+        val scEmail = escapeForJava(
+            properties.getProperty("SC_EMAIL") ?: System.getenv("SC_EMAIL") ?: ""
+        )
+        val scPassword = escapeForJava(
+            properties.getProperty("SC_PASSWORD") ?: System.getenv("SC_PASSWORD") ?: ""
+        )
+        buildConfigField("String", "SC_EMAIL", "\"$scEmail\"")
+        buildConfigField("String", "SC_PASSWORD", "\"$scPassword\"")
     }
 }
 

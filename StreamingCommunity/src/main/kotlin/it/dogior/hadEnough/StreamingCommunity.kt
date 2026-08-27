@@ -65,6 +65,11 @@ class StreamingCommunity(
 
     private val tmdbAPI = "https://api.themoviedb.org/3"
     private val tmdbApiKey = BuildConfig.TMDB_API
+
+    // Credenziali del piano premium. Vuote se i secret non sono configurati,
+    // e in quel caso il provider si comporta esattamente come prima.
+    private val accountEmail = BuildConfig.SC_EMAIL
+    private val accountPassword = BuildConfig.SC_PASSWORD
     
     private val tmdbHeaders = mapOf(
         "Authorization" to "Bearer $tmdbApiKey",
@@ -175,6 +180,38 @@ class StreamingCommunity(
         decodedXsrfToken = cookieJar["XSRF-TOKEN"]
             ?.let { URLDecoder.decode(it, StandardCharsets.UTF_8.name()) }
             ?: ""
+
+        // Login opzionale: il piano premium del sito e il solo a garantire il
+        // 1080p. Senza credenziali la sessione resta anonima; se il login
+        // fallisce si prosegue in anonimo invece di far fallire il provider.
+        if (accountEmail.isNotBlank() && accountPassword.isNotBlank()) {
+            try {
+                val loginResponse = app.post(
+                    "${siteRootUrl}login",
+                    headers = mapOf(
+                        "Cookie" to (headers["Cookie"] ?: ""),
+                        "X-XSRF-TOKEN" to decodedXsrfToken,
+                        "X-Requested-With" to "XMLHttpRequest",
+                        "Referer" to "$mainUrl/",
+                        "Origin" to siteRootUrl.removeSuffix("/"),
+                        "Accept" to "application/json, text/plain, */*"
+                    ),
+                    data = mapOf(
+                        "email" to accountEmail,
+                        "password" to accountPassword
+                    )
+                )
+                loginResponse.cookies.forEach { cookieJar[it.key] = it.value }
+                headers["Cookie"] = cookieJar.entries.joinToString("; ") { "${it.key}=${it.value}" }
+                cookieJar["XSRF-TOKEN"]?.let {
+                    decodedXsrfToken = URLDecoder.decode(it, StandardCharsets.UTF_8.name())
+                }
+                // Si registra solo il codice HTTP: le credenziali non nei log.
+                Log.d(TAG, "Login premium: HTTP ${loginResponse.code}")
+            } catch (e: Exception) {
+                Log.e(TAG, "Login premium fallito, proseguo anonimo: ${e.message}")
+            }
+        }
 
         val page = response.document
         val inertiaPageObject = page.select("#app").attr("data-page")

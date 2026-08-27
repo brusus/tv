@@ -44,11 +44,15 @@ jobs:
           TMDB_API: ${{ secrets.TMDB_API }}
           TMDB_API3: ${{ secrets.TMDB_API3 }}
           WATCHPARTY_RELAY: ${{ secrets.WATCHPARTY_RELAY }}
+          SC_EMAIL: ${{ secrets.SC_EMAIL }}
+          SC_PASSWORD: ${{ secrets.SC_PASSWORD }}
         run: |
           cd $GITHUB_WORKSPACE/src
           echo TMDB_API=$TMDB_API >> secrets.properties
           echo TMDB_API3=$TMDB_API3 >> secrets.properties
           echo WATCHPARTY_RELAY=$WATCHPARTY_RELAY >> secrets.properties
+          echo SC_EMAIL=$SC_EMAIL >> secrets.properties
+          echo SC_PASSWORD=$SC_PASSWORD >> secrets.properties
 
       - name: Build Plugins
         env:
