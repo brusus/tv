@@ -14,10 +14,7 @@ class StreamingCommunityPlugin : Plugin() {
         val lang = sharedPref?.getString("lang", "it") ?: "it"
         val showLogo = sharedPref?.getBoolean("show_logo", false) ?: false  
         
-        val accountEmail = sharedPref?.getString("account_email", "") ?: ""
-        val accountPassword = sharedPref?.getString("account_password", "") ?: ""
-
-        registerMainAPI(StreamingCommunity(lang, showLogo, accountEmail, accountPassword)) 
+        registerMainAPI(StreamingCommunity(lang, showLogo)) 
         registerExtractorAPI(VixCloudExtractor())
         registerExtractorAPI(VixSrcExtractor())
 

@@ -39,9 +39,7 @@ import java.nio.charset.StandardCharsets
 
 class StreamingCommunity(
     override var lang: String = "it",
-    private val showLogo: Boolean = true,
-    private val accountEmail: String = "",
-    private val accountPassword: String = ""
+    private val showLogo: Boolean = true
 ) : MainAPI() {
     private val siteRootUrl = "https://streamingunity.vip/"
     private val cdnHost = "cdn.streamingunity.vip"
@@ -177,38 +175,6 @@ class StreamingCommunity(
         decodedXsrfToken = cookieJar["XSRF-TOKEN"]
             ?.let { URLDecoder.decode(it, StandardCharsets.UTF_8.name()) }
             ?: ""
-
-        // Login opzionale. Il piano premium del sito e il solo a garantire il
-        // 1080p: senza credenziali la sessione resta anonima e il provider si
-        // comporta esattamente come prima.
-        if (accountEmail.isNotBlank() && accountPassword.isNotBlank()) {
-            try {
-                val loginResponse = app.post(
-                    "${siteRootUrl}login",
-                    headers = mapOf(
-                        "Cookie" to (headers["Cookie"] ?: ""),
-                        "X-XSRF-TOKEN" to decodedXsrfToken,
-                        "X-Requested-With" to "XMLHttpRequest",
-                        "Referer" to "$mainUrl/",
-                        "Origin" to siteRootUrl.removeSuffix("/"),
-                        "Accept" to "application/json, text/plain, */*"
-                    ),
-                    data = mapOf(
-                        "email" to accountEmail,
-                        "password" to accountPassword
-                    )
-                )
-                loginResponse.cookies.forEach { cookieJar[it.key] = it.value }
-                headers["Cookie"] = cookieJar.entries.joinToString("; ") { "${it.key}=${it.value}" }
-                cookieJar["XSRF-TOKEN"]?.let {
-                    decodedXsrfToken = URLDecoder.decode(it, StandardCharsets.UTF_8.name())
-                }
-                // Si registra solo l esito: le credenziali non vanno mai nei log.
-                Log.d(TAG, "Login premium: HTTP ${loginResponse.code}")
-            } catch (e: Exception) {
-                Log.e(TAG, "Login premium fallito, proseguo in anonimo: ${e.message}")
-            }
-        }
 
         val page = response.document
         val inertiaPageObject = page.select("#app").attr("data-page")
