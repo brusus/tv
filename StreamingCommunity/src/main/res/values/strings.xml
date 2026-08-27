@@ -4,4 +4,6 @@
     <string name="label">Language</string>
     <string name="it">🇮🇹  Italian</string>
     <string name="en">🇬🇧 English</string>
+    <string name="account_label">Account premium (opzionale)</string>
+    <string name="account_label">Account premium (opzionale)</string>
 </resources>

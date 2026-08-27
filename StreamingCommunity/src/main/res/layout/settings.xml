@@ -104,4 +104,56 @@
         android:paddingTop="4dp"
         android:paddingBottom="16dp" />
 
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:id="@+id/account_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account premium (opzionale)"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="4dp" />
+
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="4dp" />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/account_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Serve solo per lo streaming 1080p del piano premium. Lascia i campi vuoti per usare il provider senza account. Le credenziali restano su questo dispositivo."
+        android:textSize="12sp"
+        android:textColor="?android:attr/textColorSecondary"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="16dp" />
+
 </LinearLayout>

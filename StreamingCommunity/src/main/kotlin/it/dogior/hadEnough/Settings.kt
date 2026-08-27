@@ -12,6 +12,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.ImageButton
 import android.widget.Spinner
+import android.widget.EditText
 import android.widget.Switch
 import android.widget.TextView
 import androidx.annotation.RequiresApi
@@ -31,7 +32,12 @@ class Settings(
     private var currentLangPosition: Int = sharedPref?.getInt("langPosition", 0) ?: 0
     
     
-    private var currentShowLogo: Boolean = sharedPref?.getBoolean("show_logo", false) ?: false 
+    private var currentShowLogo: Boolean = sharedPref?.getBoolean("show_logo", false) ?: false
+
+    // Credenziali del piano premium. Restano nelle SharedPreferences dell app,
+    // cioe sul dispositivo: non finiscono mai nel repository, che e pubblico.
+    private var currentEmail: String = sharedPref?.getString("account_email", "") ?: ""
+    private var currentPassword: String = sharedPref?.getString("account_password", "") ?: "" 
 
     private fun View.makeTvCompatible() {
         this.setPadding(
@@ -120,6 +126,12 @@ class Settings(
             currentShowLogo = isChecked
         }
 
+        val emailInput: EditText? = view.findViewByName("email_input")
+        emailInput?.setText(currentEmail)
+
+        val passwordInput: EditText? = view.findViewByName("password_input")
+        passwordInput?.setText(currentPassword)
+
         val saveBtn: ImageButton? = view.findViewByName("save_btn")
         saveBtn?.makeTvCompatible()
         saveBtn?.setImageDrawable(getDrawable("save_icon"))
@@ -131,6 +143,8 @@ class Settings(
                 this.putInt("langPosition", currentLangPosition)
                 this.putString("lang", currentLang)
                 this.putBoolean("show_logo", currentShowLogo)
+                this.putString("account_email", emailInput?.text?.toString()?.trim() ?: currentEmail)
+                this.putString("account_password", passwordInput?.text?.toString()?.trim() ?: currentPassword)
             }
             
             AlertDialog.Builder(requireContext())
