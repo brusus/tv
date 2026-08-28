@@ -9,4 +9,4 @@
 .externalNativeBuild
 .cxx
 *.properties
-.vscode
+.vscode.heal-summary.txt
