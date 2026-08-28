@@ -197,7 +197,9 @@ class StreamingCommunity(
                         "Accept" to "application/json, text/plain, */*"
                     ),
                     data = mapOf(
-                        "email" to accountEmail,
+                        // Il form usa il campo "username" (accetta l'email come
+                        // valore); "email" fa rispondere 422.
+                        "username" to accountEmail,
                         "password" to accountPassword
                     )
                 )
