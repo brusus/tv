@@ -41,7 +41,7 @@ class StreamingCommunity(
     override var lang: String = "it",
     private val showLogo: Boolean = true
 ) : MainAPI() {
-    private val siteRootUrl = "https://streamingunity.vip/"
+    private val siteRootUrl = "https://streamingunity.win/"
     private val cdnHost = "cdn.streamingunity.vip"
     private var inertiaVersion = ""
     private var decodedXsrfToken = ""
