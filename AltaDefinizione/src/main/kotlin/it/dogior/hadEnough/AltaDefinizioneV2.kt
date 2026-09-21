@@ -24,7 +24,7 @@ import org.jsoup.nodes.Document
 import org.jsoup.nodes.Element
 
 class AltaDefinizioneV2 : MainAPI() {
-    override var mainUrl = "https://altadefinizione-01.fun"
+    override var mainUrl = "https://altadefinizione-01.surf"
     override var name = "AltaDefinizione"
     override val supportedTypes = setOf(TvType.Movie, TvType.TvSeries, TvType.Documentary)
     override var lang = "it"
